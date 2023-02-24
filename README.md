@@ -12,7 +12,7 @@ The differences in hardware may cause some drivers and software components to be
 If you're looking for an image to run on your Odroid U2, it's recommended to look for images specifically built for the U2 or for a similar hardware configuration to ensure the best compatibility and performance.
 
 
-_All images in this repository are tested by the maintainer on odroid-u3 & odroid-u3+ ONLY. However,please note that this code is provided as-is and without warranty. Use at your own risk._ 
+_All images in this repository are tested by the maintainer on odroid-u3 & odroid-u3+ ONLY. However, please note that this code is provided as-is and without warranty. Use at your own risk._ 
 
 
 
