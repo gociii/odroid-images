@@ -116,10 +116,13 @@ btrfs subvolume create /compile/local/imagebuilder-diskimage
 chattr -R +C /compile/local/imagebuilder-diskimage
 btrfs property set /compile/local/imagebuilder-diskimage compression none
 
-./scripts/get-files.sh $SYSTEM_TYPE $SYSTEM_ARCH $DISTRO
+/compile/local/imagebuilder/scripts/get-files.sh $SYSTEM_TYPE $SYSTEM_ARCH $DISTRO
 
-mv /compile/result/stable/${kver}
+# Replace imagebuilder kernel with self-built one above
+mv /compile/local/imagebuilder-download/kernel-odroid_u3-armv7l.tar.gz /compile/result/
+mv /compile/result/stable/${kver}.tar.gz /compile/local/imagebuilder-download/kernel-odroid_u3-armv7l.tar.gz
 
-./scripts/create-fs.sh $SYSTEM_TYPE $SYSTEM_ARCH $DISTRO
+/compile/local/imagebuilder/scripts/create-fs.sh $SYSTEM_TYPE $SYSTEM_ARCH $DISTRO
 
-./scripts/create-image.sh $SYSTEM_TYPE $SYSTEM_ARCH $DISTRO
+/compile/local/imagebuilder/scripts/create-image.sh $SYSTEM_TYPE $SYSTEM_ARCH $DISTRO
+
