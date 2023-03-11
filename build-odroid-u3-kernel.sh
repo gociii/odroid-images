@@ -12,6 +12,11 @@ export SYSTEM_TYPE=odroid_u3
 export SYSTEM_ARCH=armv7l
 export DISTRO=bullseye
 
+# make some space and prepare for building
+/scripts/extend-rootfs.sh
+/scripts/recreate-swapfile.sh 2G
+/scripts/install-buildtools.sh
+
 # get required binaries
 apt-get install -y sudo make apt-utils git build-essential u-boot-tools gcc-arm-linux-gnueabihf bc lzop flex bison libssl-dev libncurses-dev bc tree;
 apt-get install -y systemtap-sdt-dev libelf-dev libslang2-dev libperl-dev liblzma-dev libzstd-dev libcap-dev libnuma-dev libbabeltrace-ctf-dev libtraceevent-dev arch-test;
@@ -100,11 +105,6 @@ cp -v /compile/source/linux-stable-exy/*.tar.gz /compile/result/stable
 ##########################################################
 #  Build odroid-u3 IMAGE using @hexdump0815 imagebuilder #
 ##########################################################
-
-/scripts/extend-rootfs.sh
-/scripts/recreate-swapfile.sh 2G
-/scripts/install-buildtools.sh
-
 
 git clone https://github.com/hexdump0815/imagebuilder /compile/local/imagebuilder
 cd /compile/local/imagebuilder
