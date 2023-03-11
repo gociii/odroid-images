@@ -14,7 +14,7 @@ export DISTRO=bullseye
 
 # get required binaries
 apt-get install -y sudo make git build-essential u-boot-tools gcc-arm-linux-gnueabihf bc lzop flex bison libssl-dev libncurses-dev bc tree;
-apt-get install -y systemtap-sdt-dev libelf-dev libslang2-dev libperl-dev liblzma-dev libzstd-dev libcap-dev libnuma-dev libbabeltrace-ctf-dev libtraceevent-dev;
+apt-get install -y systemtap-sdt-dev libelf-dev libslang2-dev libperl-dev liblzma-dev libzstd-dev libcap-dev libnuma-dev libbabeltrace-ctf-dev libtraceevent-dev arch-test;
 
 # prepare directory structure
 mkdir -p /compile/source /compile/result/stable /compile/doc
