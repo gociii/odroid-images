@@ -6,7 +6,7 @@
 
 set -x
 
-export KernelBranch=v6.1.16
+export KernelBranch=v6.1.17
 export ARCH=arm
 export SYSTEM_TYPE=odroid_u3
 export SYSTEM_ARCH=armv7l
