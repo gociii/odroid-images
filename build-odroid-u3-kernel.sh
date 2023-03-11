@@ -18,7 +18,7 @@ export DISTRO=bullseye
 /scripts/install-buildtools.sh
 
 # get required binaries
-apt-get install -y sudo make apt-utils git build-essential u-boot-tools gcc-arm-linux-gnueabihf bc lzop flex bison libssl-dev libncurses-dev bc tree;
+apt-get install -y sudo make apt-utils git build-essential rsync u-boot-tools gcc-arm-linux-gnueabihf bc lzop flex bison libssl-dev libncurses-dev bc tree;
 apt-get install -y systemtap-sdt-dev libelf-dev libslang2-dev libperl-dev liblzma-dev libzstd-dev libcap-dev libnuma-dev libdw-dev libunwind-dev libaudit-dev python-dev binutils-dev libbabeltrace-ctf-dev libtraceevent-dev arch-test;
 
 # prepare directory structure
