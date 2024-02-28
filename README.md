@@ -1,6 +1,8 @@
 # odroid-images
 
-This is a repository holding Linux Debian images built primarily for the odroid-u3 & odroid-u3+ SBCs (single-board computers), that sport a Samsung Exynos processor. These SBCs that were manufactured by Hardkernel, and are no longer in production and are no longer supported.
+This is a repository holding Linux Debian images built primarily for the odroid-u2, odroid-u3 & odroid-u3+ SBCs (single-board computers), that sport a Samsung Exynos processor. These SBCs that were manufactured by Hardkernel, and are no longer in production and are no longer supported.
+
+Although the Odroid U2 and U3 are similar SBCs, they have some differences in hardware specifications. The images built specifically for the **Odroid U3 may not be fully compatible with the Odroid U2** - the differences in hardware may cause some drivers and software components to behave differently or not work at all. That being said, some software images **may** be compatible with the U2 too.
 
 Although the Odroid U2 and U3 are similar SBCs, they have some differences in hardware specifications. As a result, images built specifically for the **Odroid U3 may not be fully compatible with the Odroid U2** - the differences in hardware may cause some drivers and software components to behave differently or not work at all. That being said, some software images **may** be compatible with the U2 too.
 
